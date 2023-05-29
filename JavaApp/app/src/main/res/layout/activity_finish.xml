@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Finish"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/finish_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/finish_description"
+        android:textSize="50sp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/finish_test_result"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="50sp"
+        ></TextView>
+</LinearLayout>
