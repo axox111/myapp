@@ -36,7 +36,7 @@ public class Case extends QuitDialog {
         final EditText editText12 = findViewById(R.id.letter_12);
         final MyKeyboard keyboard = findViewById(R.id.case_keyboard);
         int size = 1;
-        final String correctAnswer = getResources().getString(R.string.correctAnswer);
+        final String correctAnswer = getResources().getString(R.string.correct_answer);
         final TextView tryAgain = findViewById(R.id.tryAgain);
 
         InputConnection ic1 = editText1.onCreateInputConnection(new EditorInfo());
@@ -341,8 +341,8 @@ public class Case extends QuitDialog {
                         long finish = System.currentTimeMillis();
                         long elapsed = finish - start;
                         int seconds = (int) (elapsed / 1000);
-                        int mseconds = (int) (elapsed % 1000);
-                        result = String.valueOf(seconds) + "." + String.valueOf(mseconds);
+                        int mSeconds = (int) (elapsed % 1000);
+                        result = String.valueOf(seconds) + "." + String.valueOf(mSeconds);
                         Runnable delayedActivity = new Runnable() {
                             @Override
                             public void run() {
@@ -352,7 +352,7 @@ public class Case extends QuitDialog {
                         };
                         new Handler().postDelayed(delayedActivity, 300);
                     } else {
-                        tryAgain.setText(R.string.case_tryAgain);
+                        tryAgain.setText(R.string.case_try_again);
                     }
                 }
             }

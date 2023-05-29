@@ -1,16 +1,12 @@
 package com.example.javaapp;
 
 import android.content.Context;
-import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.SparseArray;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.inputmethod.ExtractedTextRequest;
 import android.view.inputmethod.InputConnection;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 
 public class MyKeyboard extends LinearLayout implements View.OnClickListener {
