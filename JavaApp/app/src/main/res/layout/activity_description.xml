@@ -39,8 +39,8 @@
         android:gravity="center"
         android:textSize="20sp"
         android:textColor="@color/black"
-        android:text="Asdaskljdaskjhsad"
         android:textStyle="bold"/>
+
 
     <com.example.javaapp.MyKeyboard
         android:id="@+id/description_keyboard"

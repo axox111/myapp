@@ -8,7 +8,6 @@ import android.view.MotionEvent;
 
 public class MainActivity extends QuitDialog {
 
-    public static long dateStart;
     float x1, x2, y1, y2;
 
     @Override

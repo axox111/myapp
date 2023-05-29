@@ -15,7 +15,6 @@ import android.widget.TextView;
 public class Case extends QuitDialog {
 
     public static String result;
-    public static MyKeyboard keyboard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
