@@ -3,6 +3,7 @@ package com.example.javaapp;
 import android.content.Intent;
 import android.inputmethodservice.Keyboard;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.InputType;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -39,6 +40,13 @@ public class Description extends QuitDialog {
                     public void onClick(View v) {
                         if (name.getText().length() == 0) {
                             enterName.setText(R.string.enter_name);
+                            Handler handler = new Handler();
+                            handler.postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    enterName.setVisibility(View.GONE);
+                                }
+                            }, 300);
                         } else{
                             Intent i = new Intent(Description.this, Case.class);
                             startActivity(i);
