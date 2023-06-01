@@ -1,17 +1,8 @@
 package com.example.javaapp;
 
 
-import android.icu.util.Output;
 import android.os.Bundle;
 import android.widget.TextView;
-
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.OutputStream;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
-import java.nio.file.Files;
 
 
 public class Finish extends QuitDialog {
@@ -27,7 +18,7 @@ public class Finish extends QuitDialog {
 
     }
 
-    private void postResult() throws FileNotFoundException, UnsupportedEncodingException {
+    private void postResult() {
 
         final String url;
         String name = String.valueOf(Description.name);
