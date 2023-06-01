@@ -88,9 +88,10 @@ public class Case extends QuitDialog {
                 }
             }
         });
+
         et2.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int count) {
 
             }
 
@@ -104,6 +105,15 @@ public class Case extends QuitDialog {
                     et3.requestFocus();
                     keyboard.setInputConnection(ic3);
                 }
+            }
+        });
+        et2.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (1 == 1) {
+                    et1.requestFocus();
+                }
+                return false;
             }
         });
         et3.addTextChangedListener(new TextWatcher() {
@@ -124,6 +134,15 @@ public class Case extends QuitDialog {
                 }
             }
         });
+        et3.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_DEL) {
+                    et2.requestFocus();
+                }
+                return false;
+            }
+        });
         et4.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -140,6 +159,15 @@ public class Case extends QuitDialog {
                     et5.requestFocus();
                     keyboard.setInputConnection(ic5);
                 }
+            }
+        });
+        et4.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_DEL) {
+                    et3.requestFocus();
+                }
+                return false;
             }
         });
         et5.addTextChangedListener(new TextWatcher() {
@@ -160,6 +188,15 @@ public class Case extends QuitDialog {
                 }
             }
         });
+        et5.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_DEL) {
+                    et4.requestFocus();
+                }
+                return false;
+            }
+        });
         et6.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -176,6 +213,15 @@ public class Case extends QuitDialog {
                     et7.requestFocus();
                     keyboard.setInputConnection(ic7);
                 }
+            }
+        });
+        et6.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_DEL) {
+                    et5.requestFocus();
+                }
+                return false;
             }
         });
         et7.addTextChangedListener(new TextWatcher() {
@@ -196,6 +242,15 @@ public class Case extends QuitDialog {
                 }
             }
         });
+        et7.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_DEL) {
+                    et6.requestFocus();
+                }
+                return false;
+            }
+        });
         et8.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -212,6 +267,15 @@ public class Case extends QuitDialog {
                     et9.requestFocus();
                     keyboard.setInputConnection(ic9);
                 }
+            }
+        });
+        et8.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_DEL) {
+                    et7.requestFocus();
+                }
+                return false;
             }
         });
         et9.addTextChangedListener(new TextWatcher() {
@@ -232,6 +296,15 @@ public class Case extends QuitDialog {
                 }
             }
         });
+        et9.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_DEL) {
+                    et8.requestFocus();
+                }
+                return false;
+            }
+        });
         et10.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -250,6 +323,15 @@ public class Case extends QuitDialog {
                 }
             }
         });
+        et10.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_DEL) {
+                    et9.requestFocus();
+                }
+                return false;
+            }
+        });
         et11.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -266,6 +348,15 @@ public class Case extends QuitDialog {
                     et12.requestFocus();
                     keyboard.setInputConnection(ic12);
                 }
+            }
+        });
+        et11.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_DEL) {
+                    et10.requestFocus();
+                }
+                return false;
             }
         });
         et12.addTextChangedListener(new TextWatcher() {
@@ -309,5 +400,7 @@ public class Case extends QuitDialog {
                 }
             }
         });
+
     }
+
 }

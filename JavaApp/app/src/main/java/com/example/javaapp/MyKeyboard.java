@@ -3,6 +3,7 @@ package com.example.javaapp;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.SparseArray;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.inputmethod.InputConnection;
@@ -143,6 +144,7 @@ public class MyKeyboard extends LinearLayout implements View.OnClickListener {
         keyValue.put(R.id.button_31, "Б");
         keyValue.put(R.id.button_32, "Ю");
         keyValue.put(R.id.button_backspace, null);
+
     }
 
     @Override
@@ -151,6 +153,7 @@ public class MyKeyboard extends LinearLayout implements View.OnClickListener {
             return;
         if (v.getId()== R.id.button_backspace) {
             ic.deleteSurroundingText(1, 0);
+
         } else {
             String value = keyValue.get(v.getId());
             ic.commitText(value, 1);
