@@ -24,13 +24,7 @@ public class Finish extends QuitDialog {
         TextView result = findViewById(R.id.finish_test_result);
         result.setText(Case.result);
         result.getText();
-        try {
-            postResult();
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        } catch (UnsupportedEncodingException e) {
-            throw new RuntimeException(e);
-        }
+
     }
 
     private void postResult() throws FileNotFoundException, UnsupportedEncodingException {
@@ -39,11 +33,5 @@ public class Finish extends QuitDialog {
         String name = String.valueOf(Description.name);
         String time = Case.result;
 
-        File file = new File("test");
-        PrintWriter pw = new PrintWriter(file);
-
-        pw.println("string1");
-
-        pw.close();
     }
 }
