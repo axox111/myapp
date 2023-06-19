@@ -55,18 +55,18 @@ public class Case extends QuitDialog {
 
         keyboard.setInputConnection(ic1);
 
-        et1.setInputType(InputType.TYPE_NULL);
-        et2.setInputType(InputType.TYPE_NULL);
-        et3.setInputType(InputType.TYPE_NULL);
-        et4.setInputType(InputType.TYPE_NULL);
-        et5.setInputType(InputType.TYPE_NULL);
-        et6.setInputType(InputType.TYPE_NULL);
-        et7.setInputType(InputType.TYPE_NULL);
-        et8.setInputType(InputType.TYPE_NULL);
-        et9.setInputType(InputType.TYPE_NULL);
-        et10.setInputType(InputType.TYPE_NULL);
-        et11.setInputType(InputType.TYPE_NULL);
-        et12.setInputType(InputType.TYPE_NULL);
+//        et1.setInputType(InputType.TYPE_NULL);
+//        et2.setInputType(InputType.TYPE_NULL);
+//        et3.setInputType(InputType.TYPE_NULL);
+//        et4.setInputType(InputType.TYPE_NULL);
+//        et5.setInputType(InputType.TYPE_NULL);
+//        et6.setInputType(InputType.TYPE_NULL);
+//        et7.setInputType(InputType.TYPE_NULL);
+//        et8.setInputType(InputType.TYPE_NULL);
+//        et9.setInputType(InputType.TYPE_NULL);
+//        et10.setInputType(InputType.TYPE_NULL);
+//        et11.setInputType(InputType.TYPE_NULL);
+//        et12.setInputType(InputType.TYPE_NULL);
 
         long start = System.currentTimeMillis();
         et1.addTextChangedListener(new TextWatcher() {
@@ -88,7 +88,6 @@ public class Case extends QuitDialog {
                 }
             }
         });
-
         et2.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int count) {
@@ -110,7 +109,7 @@ public class Case extends QuitDialog {
         et2.setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if (1 == 1) {
+                if (keyCode == KeyEvent.KEYCODE_DEL) {
                     et1.requestFocus();
                 }
                 return false;
@@ -400,7 +399,15 @@ public class Case extends QuitDialog {
                 }
             }
         });
-
+        et12.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_DEL) {
+                    et11.requestFocus();
+                }
+                return false;
+            }
+        });
     }
 
 }
