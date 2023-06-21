@@ -176,6 +176,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/case_keyboard"
         android:gravity="center"
+        android:textColor="@color/black"
         android:layout_centerInParent="true"/>
 
     <com.example.javaapp.MyKeyboard

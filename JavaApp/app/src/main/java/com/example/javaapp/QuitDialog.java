@@ -11,13 +11,13 @@ public class QuitDialog extends AppCompatActivity {
 
         new AlertDialog.Builder(this)
                 .setIcon(R.drawable.alert_dialog_icon)
-                .setMessage("@strings/quit_massage")
-                .setPositiveButton("@strings/btnYes", new DialogInterface.OnClickListener() {
+                .setMessage(R.string.quit_massege)
+                .setPositiveButton(R.string.btn_yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         finish();
                     }
                 })
-                .setNegativeButton("@strings/btnNo", null).show();
+                .setNegativeButton(R.string.btn_no, null).show();
     }
 }

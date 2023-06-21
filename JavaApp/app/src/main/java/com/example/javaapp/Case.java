@@ -17,6 +17,19 @@ import android.widget.TextView;
 public class Case extends QuitDialog {
 
     public static String result;
+    public static EditText et1;
+    public static EditText et2;
+    public static EditText et3;
+    public static EditText et4;
+    public static EditText et5;
+    public static EditText et6;
+    public static EditText et7;
+    public static EditText et8;
+    public static EditText et9;
+    public static EditText et10;
+    public static EditText et11;
+    public static EditText et12;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,6 +101,16 @@ public class Case extends QuitDialog {
                 }
             }
         });
+        et2.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (v.getId() == R.id.button_backspace) {
+                    et1.requestFocus();
+                    et1.setText("q");
+                }
+                return false;
+            }
+        });
         et2.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int count) {
@@ -106,18 +129,9 @@ public class Case extends QuitDialog {
                 }
             }
         });
-        et2.setOnKeyListener(new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if (v.getId() == R.id.button_backspace) {
-                    et1.requestFocus();
-                }
-                return false;
-            }
-        });
         et3.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int count) {
 
             }
 
@@ -133,17 +147,191 @@ public class Case extends QuitDialog {
                 }
             }
         });
-        et3.setOnKeyListener(new View.OnKeyListener() {
+        et4.addTextChangedListener(new TextWatcher() {
             @Override
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if (keyCode == KeyEvent.KEYCODE_DEL) {
-                    et2.requestFocus();
-                    et2.setText("");
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int count) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                if (editable.toString().length() == size) {
+                    et5.requestFocus();
+                    keyboard.setInputConnection(ic5);
                 }
-                return false;
+            }
+        });
+        et5.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int count) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                if (editable.toString().length() == size) {
+                    et6.requestFocus();
+                    keyboard.setInputConnection(ic6);
+                }
+            }
+        });
+        et6.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int count) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                if (editable.toString().length() == size) {
+                    et7.requestFocus();
+                    keyboard.setInputConnection(ic7);
+                }
+            }
+        });
+        et7.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int count) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                if (editable.toString().length() == size) {
+                    et8.requestFocus();
+                    keyboard.setInputConnection(ic8);
+                }
+            }
+        });
+        et8.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int count) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                if (editable.toString().length() == size) {
+                    et9.requestFocus();
+                    keyboard.setInputConnection(ic9);
+                }
+            }
+        });
+        et9.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int count) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                if (editable.toString().length() == size) {
+                    et10.requestFocus();
+                    keyboard.setInputConnection(ic10);
+                }
+            }
+        });
+        et10.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int count) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                if (editable.toString().length() == size) {
+                    et11.requestFocus();
+                    keyboard.setInputConnection(ic11);
+                }
+            }
+        });
+        et11.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int count) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                if (editable.toString().length() == size) {
+                    et12.requestFocus();
+                    keyboard.setInputConnection(ic12);
+                }
+            }
+        });
+        et12.addTextChangedListener(new TextWatcher() {
+
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                if (editable.toString().length() == size) {
+                    String answer = et1.getText().toString()
+                            + et2.getText().toString() + et3.getText().toString()
+                            + et4.getText().toString() + et5.getText().toString()
+                            + et6.getText().toString() + et7.getText().toString()
+                            + et8.getText().toString() + et9.getText().toString()
+                            + et10.getText().toString() + et11.getText().toString()
+                            + et12.getText().toString();
+                    if (correctAnswer.equals(answer)) {
+                        long finish = System.currentTimeMillis();
+                        long elapsed = finish - start;
+                        int seconds = (int) (elapsed / 1000);
+                        int mSeconds = (int) (elapsed % 1000);
+                        result = String.valueOf(seconds) + "." + String.valueOf(mSeconds);
+                        Runnable delayedActivity = new Runnable() {
+                            @Override
+                            public void run() {
+                                Intent i = new Intent(Case.this, Finish.class);
+                                startActivity(i);
+                            }
+                        };
+                        new Handler().postDelayed(delayedActivity, 300);
+                    } else {
+                        tryAgain.setText(R.string.case_try_again);
+                    }
+                }
             }
         });
 
     }
-
 }

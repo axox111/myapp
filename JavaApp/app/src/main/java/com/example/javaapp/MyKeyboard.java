@@ -12,10 +12,10 @@ import android.widget.LinearLayout;
 public class MyKeyboard extends LinearLayout implements View.OnClickListener {
 
     public MyKeyboard(Context context) {
-        super(context, null,0);
+        super(context, null, 0);
     }
 
-    public MyKeyboard(Context context, AttributeSet attrs){
+    public MyKeyboard(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
@@ -24,23 +24,45 @@ public class MyKeyboard extends LinearLayout implements View.OnClickListener {
         init(context, attrs);
     }
 
-    private Button mButton1;    private Button mButton2;    private Button mButton3;
-    private Button mButton4;    private Button mButton5;    private Button mButton6;
-    private Button mButton7;    private Button mButton8;    private Button mButton9;
-    private Button mButton10;    private Button mButton11;    private Button mButton12;
-    private Button mButton13;    private Button mButton14;    private Button mButton15;
-    private Button mButton16;    private Button mButton17;    private Button mButton18;
-    private Button mButton19;    private Button mButton20;    private Button mButton21;
-    private Button mButton22;    private Button mButton23;    private Button mButton24;
-    private Button mButton25;    private Button mButton26;    private Button mButton27;
-    private Button mButton28;    private Button mButton29;    private Button mButton30;
-    private Button mButton31;    private Button mButton32;    private Button mButtonBackspace;
+    private Button mButton1;
+    private Button mButton2;
+    private Button mButton3;
+    private Button mButton4;
+    private Button mButton5;
+    private Button mButton6;
+    private Button mButton7;
+    private Button mButton8;
+    private Button mButton9;
+    private Button mButton10;
+    private Button mButton11;
+    private Button mButton12;
+    private Button mButton13;
+    private Button mButton14;
+    private Button mButton15;
+    private Button mButton16;
+    private Button mButton17;
+    private Button mButton18;
+    private Button mButton19;
+    private Button mButton20;
+    private Button mButton21;
+    private Button mButton22;
+    private Button mButton23;
+    private Button mButton24;
+    private Button mButton25;
+    private Button mButton26;
+    private Button mButton27;
+    private Button mButton28;
+    private Button mButton29;
+    private Button mButton30;
+    private Button mButton31;
+    private Button mButton32;
+    private Button mButtonBackspace;
 
     SparseArray<String> keyValue = new SparseArray<>();
 
     InputConnection ic;
 
-    private void init (Context context, AttributeSet attrs) {
+    private void init(Context context, AttributeSet attrs) {
         LayoutInflater.from(context).inflate(R.layout.keyboard, this, true);
         mButton1 = (Button) findViewById(R.id.button_1);
         mButton2 = (Button) findViewById(R.id.button_2);
@@ -148,18 +170,20 @@ public class MyKeyboard extends LinearLayout implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+        CharSequence selectedText = ic.getSelectedText(0);
         if (ic == null)
             return;
-        if (v.getId()== R.id.button_backspace) {
+        if (v.getId() == R.id.button_backspace) {
             ic.deleteSurroundingText(1, 0);
-
         } else {
             String value = keyValue.get(v.getId());
             ic.commitText(value, 1);
         }
+
     }
 
-    public void setInputConnection (InputConnection setIC) {
+
+    public void setInputConnection(InputConnection setIC) {
         this.ic = setIC;
     }
 }
