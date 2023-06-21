@@ -4,14 +4,93 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Description"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#E6EE9C">
+
+    <ImageView
+        android:layout_width="300sp"
+        android:layout_height="200sp"
+        android:id="@+id/fasol"
+        android:src="@drawable/fasol"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"/>
 
     <TextView
-        android:id="@+id/description_text"
+        android:id="@+id/description_text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/description"
-        android:textSize="20sp"/>
+        android:text="@string/description1"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:paddingRight="15sp"
+        android:paddingLeft="15sp"
+        android:paddingTop="20sp"/>
+
+    <TextView
+        android:id="@+id/description_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description2"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@id/description_text1"
+        android:paddingRight="15sp"
+        android:paddingLeft="15sp"
+        android:paddingTop="10sp"/>
+
+    <TextView
+        android:id="@+id/description_text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description3"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@id/description_text2"
+        android:paddingRight="15sp"
+        android:paddingLeft="15sp"
+        android:textStyle="bold"
+        android:paddingTop="10sp"/>
+
+    <TextView
+        android:id="@+id/description_text31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description3.1"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@id/description_text3"
+        android:paddingRight="15sp"
+        android:paddingLeft="15sp"/>
+
+    <TextView
+        android:id="@+id/description_text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description4"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@id/description_text31"
+        android:paddingRight="15sp"
+        android:paddingLeft="15sp"
+        android:paddingTop="10sp"/>
+
+    <TextView
+        android:id="@+id/description_text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description5"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@id/description_text4"
+        android:paddingRight="15sp"
+        android:paddingLeft="15sp"
+        android:paddingTop="10sp"/>
 
     <EditText
         android:id="@+id/name"
@@ -19,16 +98,17 @@
         android:layout_height="50sp"
         android:textSize="20sp"
         android:hint="@string/name_text"
-        android:layout_below="@id/description_text"
+        android:layout_below="@id/description_text5"
         android:autofillHints="no"/>
 
     <Button
         android:id="@+id/startButton"
-        android:layout_width="wrap_content"
+        android:layout_width="140sp"
         android:layout_height="wrap_content"
         android:text="@string/description_btn"
+        android:layout_marginLeft="10sp"
+        android:background="@drawable/button_style"
         android:layout_below="@id/name"/>
-
 
     <TextView
         android:id="@+id/enter_name"
@@ -47,6 +127,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_margin="5sp"
         android:layout_alignParentBottom="true" />
 
 

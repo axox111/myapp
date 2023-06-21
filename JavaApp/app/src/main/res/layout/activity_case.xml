@@ -4,164 +4,170 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#80CBC4"
     tools:context=".Case">
 
     <TextView
         android:id="@+id/caseText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:paddingTop="15sp"
         android:text="@string/case_description"
-        android:textSize="20sp"></TextView>
+        android:textSize="20sp"/>
 
     <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="center"
+        android:paddingTop="15sp"
+        android:layout_below="@id/caseText"
         android:orientation="horizontal">
 
         <EditText
             android:id="@+id/letter_1"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
             android:background="@drawable/border"
-            android:textAlignment="center"
-            android:textSize="20dp"
             android:maxLength="1"
-            android:textIsSelectable="false"></EditText>
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/letter_2"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
             android:layout_centerInParent="true"
             android:layout_toRightOf="@id/letter_1"
             android:background="@drawable/border"
-            android:textAlignment="center"
-            android:textSize="20dp"
             android:maxLength="1"
             android:nextFocusLeft="@+id/letter_1"
-            android:textIsSelectable="false"></EditText>
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/letter_3"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
             android:layout_centerInParent="true"
             android:layout_toRightOf="@id/letter_2"
             android:background="@drawable/border"
-            android:textAlignment="center"
-            android:textSize="20dp"
             android:maxLength="1"
-            android:textIsSelectable="false"></EditText>
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/letter_4"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
             android:layout_centerInParent="true"
             android:layout_toRightOf="@id/letter_3"
             android:background="@drawable/border"
-            android:textAlignment="center"
-            android:textSize="20dp"
             android:maxLength="1"
-            android:textIsSelectable="false"></EditText>
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/letter_5"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
             android:layout_centerInParent="true"
             android:layout_toRightOf="@id/letter_4"
             android:background="@drawable/border"
-            android:textAlignment="center"
-            android:textSize="20dp"
             android:maxLength="1"
-            android:textIsSelectable="false"></EditText>
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/letter_6"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
             android:layout_centerInParent="true"
             android:layout_toRightOf="@id/letter_5"
             android:background="@drawable/border"
-            android:textAlignment="center"
-            android:textSize="20dp"
             android:maxLength="1"
-            android:textIsSelectable="false"></EditText>
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/letter_7"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
             android:layout_centerInParent="true"
             android:layout_toRightOf="@id/letter_6"
             android:background="@drawable/border"
-            android:textAlignment="center"
-            android:textSize="20dp"
             android:maxLength="1"
-            android:textIsSelectable="false"></EditText>
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/letter_8"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
             android:layout_centerInParent="true"
             android:layout_toRightOf="@id/letter_7"
             android:background="@drawable/border"
-            android:textAlignment="center"
-            android:textSize="20dp"
             android:maxLength="1"
-            android:textIsSelectable="false"></EditText>
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/letter_9"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
             android:layout_centerInParent="true"
             android:layout_toRightOf="@id/letter_8"
             android:background="@drawable/border"
-            android:textAlignment="center"
-            android:textSize="20dp"
             android:maxLength="1"
-            android:textIsSelectable="false"></EditText>
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/letter_10"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
             android:layout_centerInParent="true"
             android:layout_toRightOf="@id/letter_9"
             android:background="@drawable/border"
-            android:textAlignment="center"
-            android:textSize="20dp"
             android:maxLength="1"
-            android:textIsSelectable="false"></EditText>
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/letter_11"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
             android:layout_centerInParent="true"
             android:layout_toRightOf="@id/letter_10"
             android:background="@drawable/border"
-            android:textAlignment="center"
-            android:textSize="20dp"
             android:maxLength="1"
-            android:textIsSelectable="false"></EditText>
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/letter_12"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
             android:layout_centerInParent="true"
             android:layout_toRightOf="@id/letter_11"
             android:background="@drawable/border"
-            android:textAlignment="center"
-            android:textSize="20dp"
             android:maxLength="1"
-            android:textIsSelectable="false"></EditText>
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
     </android.support.v7.widget.LinearLayoutCompat>
 
     <TextView
@@ -177,5 +183,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="vertical"></com.example.javaapp.MyKeyboard>
+        android:orientation="vertical"/>
 </RelativeLayout>

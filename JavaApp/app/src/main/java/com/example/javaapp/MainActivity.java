@@ -4,17 +4,20 @@ package com.example.javaapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
+import android.widget.ImageView;
 
 
 public class MainActivity extends QuitDialog {
 
     float x1, x2, y1, y2;
+    ImageView me;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
+
+        }
 
 
     public boolean onTouchEvent(MotionEvent touchevent){
@@ -26,7 +29,7 @@ public class MainActivity extends QuitDialog {
             case MotionEvent.ACTION_UP:
                 x2 = touchevent.getX();
                 y2 = touchevent.getY();
-                if (y1 < y2){
+                if (y1 + 100 < y2){
                     Intent i = new Intent(MainActivity.this, Description.class);
                     startActivity(i);
                 }

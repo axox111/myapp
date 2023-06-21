@@ -4,22 +4,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#CCBB86FC"
+    android:paddingRight="15sp"
+    android:paddingLeft="15sp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/hello_hello"
-        ></TextView>
+        android:gravity="center"
+        android:layout_margin="100sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_message"
-        ></TextView>
+        android:text="@string/hello_message1"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_message2.1"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:paddingTop="30sp"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_message2.2"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_message2.3"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_message3"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:paddingTop="30sp"
+        android:textSize="18sp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/hello_swipe"
-        ></TextView>
+        android:gravity="center"
+        android:paddingTop="220sp"
+        android:textSize="18sp"/>
 
 </LinearLayout>
