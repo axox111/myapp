@@ -17,19 +17,6 @@ import android.widget.TextView;
 public class Case extends QuitDialog {
 
     public static String result;
-    public static EditText et1;
-    public static EditText et2;
-    public static EditText et3;
-    public static EditText et4;
-    public static EditText et5;
-    public static EditText et6;
-    public static EditText et7;
-    public static EditText et8;
-    public static EditText et9;
-    public static EditText et10;
-    public static EditText et11;
-    public static EditText et12;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -317,7 +304,7 @@ public class Case extends QuitDialog {
                         long elapsed = finish - start;
                         int seconds = (int) (elapsed / 1000);
                         int mSeconds = (int) (elapsed % 1000);
-                        result = String.valueOf(seconds) + "." + String.valueOf(mSeconds);
+                        result = seconds + "." + mSeconds;
                         Runnable delayedActivity = new Runnable() {
                             @Override
                             public void run() {

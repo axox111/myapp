@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Finish"
-    android:background="#fff"
+    android:background="#FFCCBC"
     android:orientation="vertical">
 
     <TextView
@@ -13,13 +13,28 @@
         android:layout_height="wrap_content"
         android:text="@string/finish_description"
         android:textSize="50sp"
-        ></TextView>
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="30sp"/>
 
     <TextView
         android:id="@+id/finish_test_result"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:textSize="50sp"
-        ></TextView>
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="30sp"/>
+
+    <TextView
+        android:id="@+id/finish_goodbye"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:text="спасиба\nдасвидания"
+        android:layout_marginTop="180sp"/>
+
 
 </LinearLayout>

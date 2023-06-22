@@ -2,16 +2,10 @@ package com.example.javaapp;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.inputmethodservice.Keyboard;
-import android.media.Image;
 import android.os.Bundle;
 import android.text.InputType;
-import android.view.Gravity;
-import android.view.KeyEvent;
-import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
@@ -19,13 +13,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class Description extends QuitDialog {
 
     public static EditText name;
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,4 +82,5 @@ public class Description extends QuitDialog {
                 }
         );
     }
+
 }

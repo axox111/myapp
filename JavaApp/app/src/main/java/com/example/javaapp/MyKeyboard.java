@@ -24,79 +24,45 @@ public class MyKeyboard extends LinearLayout implements View.OnClickListener {
         init(context, attrs);
     }
 
-    private Button mButton1;
-    private Button mButton2;
-    private Button mButton3;
-    private Button mButton4;
-    private Button mButton5;
-    private Button mButton6;
-    private Button mButton7;
-    private Button mButton8;
-    private Button mButton9;
-    private Button mButton10;
-    private Button mButton11;
-    private Button mButton12;
-    private Button mButton13;
-    private Button mButton14;
-    private Button mButton15;
-    private Button mButton16;
-    private Button mButton17;
-    private Button mButton18;
-    private Button mButton19;
-    private Button mButton20;
-    private Button mButton21;
-    private Button mButton22;
-    private Button mButton23;
-    private Button mButton24;
-    private Button mButton25;
-    private Button mButton26;
-    private Button mButton27;
-    private Button mButton28;
-    private Button mButton29;
-    private Button mButton30;
-    private Button mButton31;
-    private Button mButton32;
-    private Button mButtonBackspace;
-
     SparseArray<String> keyValue = new SparseArray<>();
 
     InputConnection ic;
 
     private void init(Context context, AttributeSet attrs) {
         LayoutInflater.from(context).inflate(R.layout.keyboard, this, true);
-        mButton1 = (Button) findViewById(R.id.button_1);
-        mButton2 = (Button) findViewById(R.id.button_2);
-        mButton3 = (Button) findViewById(R.id.button_3);
-        mButton4 = (Button) findViewById(R.id.button_4);
-        mButton5 = (Button) findViewById(R.id.button_5);
-        mButton6 = (Button) findViewById(R.id.button_6);
-        mButton7 = (Button) findViewById(R.id.button_7);
-        mButton8 = (Button) findViewById(R.id.button_8);
-        mButton9 = (Button) findViewById(R.id.button_9);
-        mButton10 = (Button) findViewById(R.id.button_10);
-        mButton11 = (Button) findViewById(R.id.button_11);
-        mButton12 = (Button) findViewById(R.id.button_12);
-        mButton13 = (Button) findViewById(R.id.button_13);
-        mButton14 = (Button) findViewById(R.id.button_14);
-        mButton15 = (Button) findViewById(R.id.button_15);
-        mButton16 = (Button) findViewById(R.id.button_16);
-        mButton17 = (Button) findViewById(R.id.button_17);
-        mButton18 = (Button) findViewById(R.id.button_18);
-        mButton19 = (Button) findViewById(R.id.button_19);
-        mButton20 = (Button) findViewById(R.id.button_20);
-        mButton21 = (Button) findViewById(R.id.button_21);
-        mButton22 = (Button) findViewById(R.id.button_22);
-        mButton23 = (Button) findViewById(R.id.button_23);
-        mButton24 = (Button) findViewById(R.id.button_24);
-        mButton25 = (Button) findViewById(R.id.button_25);
-        mButton26 = (Button) findViewById(R.id.button_26);
-        mButton27 = (Button) findViewById(R.id.button_27);
-        mButton28 = (Button) findViewById(R.id.button_28);
-        mButton29 = (Button) findViewById(R.id.button_29);
-        mButton30 = (Button) findViewById(R.id.button_30);
-        mButton31 = (Button) findViewById(R.id.button_31);
-        mButton32 = (Button) findViewById(R.id.button_32);
-        mButtonBackspace = (Button) findViewById(R.id.button_backspace);
+        Button mButton1 = (Button) findViewById(R.id.button_1);
+        Button mButton2 = (Button) findViewById(R.id.button_2);
+        Button mButton3 = (Button) findViewById(R.id.button_3);
+        Button mButton4 = (Button) findViewById(R.id.button_4);
+        Button mButton5 = (Button) findViewById(R.id.button_5);
+        Button mButton6 = (Button) findViewById(R.id.button_6);
+        Button mButton7 = (Button) findViewById(R.id.button_7);
+        Button mButton8 = (Button) findViewById(R.id.button_8);
+        Button mButton9 = (Button) findViewById(R.id.button_9);
+        Button mButton10 = (Button) findViewById(R.id.button_10);
+        Button mButton11 = (Button) findViewById(R.id.button_11);
+        Button mButton12 = (Button) findViewById(R.id.button_12);
+        Button mButton13 = (Button) findViewById(R.id.button_13);
+        Button mButton14 = (Button) findViewById(R.id.button_14);
+        Button mButton15 = (Button) findViewById(R.id.button_15);
+        Button mButton16 = (Button) findViewById(R.id.button_16);
+        Button mButton17 = (Button) findViewById(R.id.button_17);
+        Button mButton18 = (Button) findViewById(R.id.button_18);
+        Button mButton19 = (Button) findViewById(R.id.button_19);
+        Button mButton20 = (Button) findViewById(R.id.button_20);
+        Button mButton21 = (Button) findViewById(R.id.button_21);
+        Button mButton22 = (Button) findViewById(R.id.button_22);
+        Button mButton23 = (Button) findViewById(R.id.button_23);
+        Button mButton24 = (Button) findViewById(R.id.button_24);
+        Button mButton25 = (Button) findViewById(R.id.button_25);
+        Button mButton26 = (Button) findViewById(R.id.button_26);
+        Button mButton27 = (Button) findViewById(R.id.button_27);
+        Button mButton28 = (Button) findViewById(R.id.button_28);
+        Button mButton29 = (Button) findViewById(R.id.button_29);
+        Button mButton30 = (Button) findViewById(R.id.button_30);
+        Button mButton31 = (Button) findViewById(R.id.button_31);
+        Button mButton32 = (Button) findViewById(R.id.button_32);
+        Button mButtonBackspace = (Button) findViewById(R.id.button_backspace);
 
         mButton1.setOnClickListener(this);
         mButton2.setOnClickListener(this);
@@ -170,7 +136,6 @@ public class MyKeyboard extends LinearLayout implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        CharSequence selectedText = ic.getSelectedText(0);
         if (ic == null)
             return;
         if (v.getId() == R.id.button_backspace) {
@@ -187,4 +152,5 @@ public class MyKeyboard extends LinearLayout implements View.OnClickListener {
         this.ic = setIC;
     }
 }
+
 
