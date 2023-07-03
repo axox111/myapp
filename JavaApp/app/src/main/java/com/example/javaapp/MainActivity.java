@@ -4,7 +4,6 @@ package com.example.javaapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
-import android.widget.ImageView;
 
 
 public class MainActivity extends QuitDialog {

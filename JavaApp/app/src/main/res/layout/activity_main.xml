@@ -6,8 +6,16 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:background="#CCBB86FC"
+    android:id="@+id/activity_view"
     android:paddingRight="15sp"
     android:paddingLeft="15sp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/me"
+        android:src="@drawable/me"
+        android:visibility="invisible"/>
 
     <TextView
         android:layout_width="match_parent"
