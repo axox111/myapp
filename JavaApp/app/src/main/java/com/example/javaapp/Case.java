@@ -55,18 +55,18 @@ public class Case extends QuitDialog {
 
         keyboard.setInputConnection(ic1);
 
-//        et1.setInputType(InputType.TYPE_NULL);
-//        et2.setInputType(InputType.TYPE_NULL);
-//        et3.setInputType(InputType.TYPE_NULL);
-//        et4.setInputType(InputType.TYPE_NULL);
-//        et5.setInputType(InputType.TYPE_NULL);
-//        et6.setInputType(InputType.TYPE_NULL);
-//        et7.setInputType(InputType.TYPE_NULL);
-//        et8.setInputType(InputType.TYPE_NULL);
-//        et9.setInputType(InputType.TYPE_NULL);
-//        et10.setInputType(InputType.TYPE_NULL);
-//        et11.setInputType(InputType.TYPE_NULL);
-//        et12.setInputType(InputType.TYPE_NULL);
+        et1.setInputType(InputType.TYPE_NULL);
+        et2.setInputType(InputType.TYPE_NULL);
+        et3.setInputType(InputType.TYPE_NULL);
+        et4.setInputType(InputType.TYPE_NULL);
+        et5.setInputType(InputType.TYPE_NULL);
+        et6.setInputType(InputType.TYPE_NULL);
+        et7.setInputType(InputType.TYPE_NULL);
+        et8.setInputType(InputType.TYPE_NULL);
+        et9.setInputType(InputType.TYPE_NULL);
+        et10.setInputType(InputType.TYPE_NULL);
+        et11.setInputType(InputType.TYPE_NULL);
+        et12.setInputType(InputType.TYPE_NULL);
 
         long start = System.currentTimeMillis();
 
@@ -74,7 +74,9 @@ public class Case extends QuitDialog {
         backspace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (et12.hasFocus() && et12.getText().toString().isEmpty()) {
+                if (et12.hasFocus() && !et12.getText().toString().isEmpty()) {
+                    et12.setText("");
+                } else if (et12.hasFocus() && et12.getText().toString().isEmpty()) {
                     keyboard.setInputConnection(ic11);
                     et11.requestFocus();
                     et11.setText("");
@@ -82,42 +84,86 @@ public class Case extends QuitDialog {
                     keyboard.setInputConnection(ic10);
                     et10.requestFocus();
                     et10.setText("");
+                } else if (et11.hasFocus() && !et11.getText().toString().isEmpty()) {
+                    et11.setText("");
+                    keyboard.setInputConnection(ic10);
+                    et10.requestFocus();
                 } else if (et10.hasFocus() && et10.getText().toString().isEmpty()) {
                     keyboard.setInputConnection(ic9);
                     et9.requestFocus();
                     et9.setText("");
+                } else if (et10.hasFocus() && !et10.getText().toString().isEmpty()) {
+                    et10.setText("");
+                    keyboard.setInputConnection(ic9);
+                    et9.requestFocus();
                 } else if (et9.hasFocus() && et9.getText().toString().isEmpty()) {
                     keyboard.setInputConnection(ic8);
                     et8.requestFocus();
                     et8.setText("");
+                } else if (et9.hasFocus() && !et9.getText().toString().isEmpty()) {
+                    et9.setText("");
+                    keyboard.setInputConnection(ic8);
+                    et8.requestFocus();
                 } else if (et8.hasFocus() && et8.getText().toString().isEmpty()) {
                     keyboard.setInputConnection(ic7);
                     et7.requestFocus();
                     et7.setText("");
+                } else if (et8.hasFocus() && !et8.getText().toString().isEmpty()) {
+                    et8.setText("");
+                    keyboard.setInputConnection(ic7);
+                    et7.requestFocus();
                 } else if (et7.hasFocus() && et7.getText().toString().isEmpty()) {
                     keyboard.setInputConnection(ic6);
                     et6.requestFocus();
                     et6.setText("");
+                } else if (et7.hasFocus() && !et7.getText().toString().isEmpty()) {
+                    et7.setText("");
+                    keyboard.setInputConnection(ic6);
+                    et6.requestFocus();
                 } else if (et6.hasFocus() && et6.getText().toString().isEmpty()) {
                     keyboard.setInputConnection(ic5);
                     et5.requestFocus();
                     et5.setText("");
+                } else if (et6.hasFocus() && !et6.getText().toString().isEmpty()) {
+                    et6.setText("");
+                    keyboard.setInputConnection(ic5);
+                    et5.requestFocus();
                 } else if (et5.hasFocus() && et5.getText().toString().isEmpty()) {
                     keyboard.setInputConnection(ic4);
                     et4.requestFocus();
                     et4.setText("");
+                } else if (et5.hasFocus() && !et5.getText().toString().isEmpty()) {
+                    et5.setText("");
+                    keyboard.setInputConnection(ic4);
+                    et4.requestFocus();
                 } else if (et4.hasFocus() && et4.getText().toString().isEmpty()) {
                     keyboard.setInputConnection(ic3);
                     et3.requestFocus();
                     et3.setText("");
+                } else if (et4.hasFocus() && !et4.getText().toString().isEmpty()) {
+                    et4.setText("");
+                    keyboard.setInputConnection(ic3);
+                    et3.requestFocus();
                 } else if (et3.hasFocus() && et3.getText().toString().isEmpty()) {
                     keyboard.setInputConnection(ic2);
                     et2.requestFocus();
                     et2.setText("");
+                } else if (et3.hasFocus() && !et3.getText().toString().isEmpty()) {
+                    et3.setText("");
+                    keyboard.setInputConnection(ic2);
+                    et2.requestFocus();
                 } else if (et2.hasFocus() && et2.getText().toString().isEmpty()) {
                     keyboard.setInputConnection(ic1);
                     et1.requestFocus();
                     et1.setText("");
+                } else if (et2.hasFocus() && !et2.getText().toString().isEmpty()) {
+                    et2.setText("");
+                    keyboard.setInputConnection(ic1);
+                    et1.requestFocus();
+                } else if (et1.hasFocus() && !et1.getText().toString().isEmpty()) {
+                    et1.setText("");
+                    keyboard.setInputConnection(ic1);
+                    et1.requestFocus();
                 }
             }
         });
@@ -319,8 +365,6 @@ public class Case extends QuitDialog {
                     et12.requestFocus();
                     keyboard.setInputConnection(ic12);
                 }
-
-
             }
         });
         et12.addTextChangedListener(new TextWatcher() {
@@ -360,14 +404,6 @@ public class Case extends QuitDialog {
                         new Handler().postDelayed(delayedActivity, 300);
                     } else {
                         tryAgain.setText(R.string.case_try_again);
-                        backspace.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                et12.setText("");
-                                et11.requestFocus();
-                                keyboard.setInputConnection(ic11);
-                            }
-                        });
                     }
                 }
             }
