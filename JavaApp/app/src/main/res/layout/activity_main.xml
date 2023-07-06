@@ -1,73 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="#CCBB86FC"
-    android:id="@+id/activity_view"
-    android:paddingRight="15sp"
-    android:paddingLeft="15sp">
+    android:background="@drawable/me"
+    tools:context=".MainActivity">
 
-    <ImageView
+    <LinearLayout
+        android:id="@+id/activity_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/me"
-        android:src="@drawable/me"
-        android:visibility="invisible"/>
+        android:orientation="vertical"
+        android:background="#BB86FC"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_hello"
-        android:gravity="center"
-        android:layout_margin="100sp"
-        android:textColor="@color/black"
-        android:textSize="20sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_message1"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="18sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_message2.1"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:paddingTop="30sp"
-        android:textSize="18sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_message2.2"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="18sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_message2.3"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="18sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_message3"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:paddingTop="30sp"
-        android:textSize="18sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_swipe"
-        android:gravity="center"
-        android:paddingTop="220sp"
-        android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="100sp"
+            android:gravity="center"
+            android:text="@string/hello_hello"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/hello_message1"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="30sp"
+            android:text="@string/hello_message2.1"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/hello_message2.2"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/hello_message2.3"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="30sp"
+            android:text="@string/hello_message3"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="220sp"
+            android:text="@string/hello_swipe"
+            android:textSize="18sp" />
+    </LinearLayout>
 </LinearLayout>
