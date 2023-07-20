@@ -1,7 +1,11 @@
 package com.example.javaapp;
 
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -16,6 +20,7 @@ public class MainActivity extends QuitDialog {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final View activityView = findViewById(R.id.activity_view);
+
         activityView.setOnTouchListener(new View.OnTouchListener() {
             float dY = 0;
 
@@ -39,7 +44,6 @@ public class MainActivity extends QuitDialog {
         });
     }
 
-
     public boolean onTouchEvent(MotionEvent touchevent) {
         switch (touchevent.getAction()) {
             case MotionEvent.ACTION_DOWN:
@@ -50,6 +54,7 @@ public class MainActivity extends QuitDialog {
                 x2 = touchevent.getX();
                 y2 = touchevent.getY();
                 if (y1 + 100 < y2) {
+                    //вставитьпроверку по мак адерсу
                     Intent i = new Intent(MainActivity.this, Description.class);
                     startActivity(i);
                 }

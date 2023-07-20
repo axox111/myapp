@@ -408,6 +408,5 @@ public class Case extends QuitDialog {
                 }
             }
         });
-
     }
 }
