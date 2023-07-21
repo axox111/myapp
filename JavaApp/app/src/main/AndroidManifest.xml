@@ -15,6 +15,9 @@
             android:name=".Sorry"
             android:exported="false" />
         <activity
+            android:name=".RealmConnecter"
+            android:exported="false" />
+        <activity
             android:name=".Finish"
             android:exported="false"
             android:noHistory="true" />
