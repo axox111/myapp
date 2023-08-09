@@ -18,6 +18,7 @@ import android.widget.TextView;
 public class Description extends QuitDialog {
 
     public static EditText name;
+    public static String id;
 
     @SuppressLint("ClickableViewAccessibility")
     @Override

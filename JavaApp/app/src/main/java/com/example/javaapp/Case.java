@@ -394,6 +394,7 @@ public class Case extends QuitDialog {
                         int seconds = (int) (elapsed / 1000);
                         int mSeconds = (int) (elapsed % 1000);
                         result = seconds + "." + mSeconds;
+                        //отправка id name и result
                         Runnable delayedActivity = new Runnable() {
                             @Override
                             public void run() {

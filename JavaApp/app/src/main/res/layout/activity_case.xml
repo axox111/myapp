@@ -17,7 +17,7 @@
         android:text="@string/case_description"
         android:textSize="20sp"/>
 
-    <android.support.v7.widget.LinearLayoutCompat
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/caseText"
@@ -168,7 +168,7 @@
             android:textAlignment="center"
             android:textIsSelectable="false"
             android:textSize="20sp" />
-    </android.support.v7.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <TextView
         android:id="@+id/tryAgain"
