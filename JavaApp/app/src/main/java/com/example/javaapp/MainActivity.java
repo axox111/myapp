@@ -60,8 +60,9 @@ public class MainActivity extends QuitDialog {
                 x2 = touchevent.getX();
                 y2 = touchevent.getY();
                 if (y1 + 100 < y2) {
-
+//                    Intent i = new Intent(MainActivity.this, Leaderboard.class);
                     Intent i = new Intent(MainActivity.this, Description.class);
+
                     startActivity(i);
                 }
                 break;

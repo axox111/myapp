@@ -23,4 +23,6 @@
     <string name="correct_answer">ЙЙЙЙЙЙЙЙЙЙЙЙ</string>
     <string name="name_text">Введи отображаемое имя</string>
     <string name="enter_name">Имя не может быть пустым, ну ёмаё</string>
+    <string name="finish_button_leaderboard">Таблица результатов</string>
+    <string name="finish_text_goodbye">спасиба дасвидания</string>
 </resources>
